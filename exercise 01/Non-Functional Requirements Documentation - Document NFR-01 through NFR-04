@@ -1,0 +1,30 @@
+NFR-01: Performance
+Description:
+The system shall process fare payment transactions quickly to avoid delays during passenger boarding.
+Acceptance Criteria:
+Transaction processing time shall not exceed 2 seconds per tap
+System shall support multiple transactions during peak hours
+No noticeable lag in payment confirmation
+NFR-02: Security
+Description:
+The system shall ensure secure handling of all payment transactions and user data.
+Acceptance Criteria:
+All transactions shall be encrypted
+Sensitive user data shall not be stored in plain text
+Unauthorized access attempts shall be prevented
+System shall comply with digital payment security standards
+NFR-03: Reliability and Availability
+Description:
+The system shall be reliable and available for continuous bus operations.
+Acceptance Criteria:
+System availability shall be at least 99% uptime
+Transactions shall not be lost during system failures
+System shall recover automatically after temporary failures
+NFR-04: Usability
+Description:
+The system shall be easy to use for passengers and bus staff with minimal training.
+Acceptance Criteria:
+User interface shall be simple and intuitive
+Passengers can complete payment with a single tap
+Conductors can verify payments easily
+Minimal training is required for operation
