@@ -1,0 +1,51 @@
+
+UC-01: User Registration
+Actor: Passenger
+Description: Allows a passenger to create an account in the system using personal and payment details.
+Preconditions: Passenger has a smartphone or smart card.
+Postconditions: Passenger account is created and ready for use.
+UC-02: Login / Authentication
+Actor: Passenger
+Description: Enables passengers to securely log in to the system to access services.
+Preconditions: Passenger has an active account.
+Postconditions: Passenger is authenticated and can access the system features.
+UC-03: Wallet / Bank Account Linking
+Actor: Passenger
+Description: Allows passengers to link their digital wallet or bank account to the system for fare payments.
+Preconditions: Passenger account is active.
+Postconditions: Payment method is securely linked and ready for transactions.
+UC-04: Tap-to-Pay Fare
+Actor: Passenger, System
+Description: Passenger pays bus fare by tapping an NFC-enabled device or smart card on the fare reader.
+Preconditions: Passenger has a linked payment method and sufficient balance.
+Postconditions: Fare is deducted, and payment confirmation is displayed.
+UC-05: Payment Confirmation Notification
+Actor: Passenger, System
+Description: Displays visual or audio confirmation of successful or failed payment to passenger and conductor.
+Preconditions: Tap-to-pay transaction initiated.
+Postconditions: Confirmation received by both passenger and conductor; system logs transaction.
+UC-06: Payment Verification
+Actor: Bus Conductor, System
+Description: Conductor verifies the payment status of passengers before or during boarding.
+Preconditions: Passenger has tapped to pay.
+Postconditions: Passenger payment is validated, and boarding is allowed if payment is successful.
+UC-07: View Transaction History
+Actor: Passenger
+Description: Passenger can view past transactions, including date, time, and fare paid.
+Preconditions: Passenger is logged in.
+Postconditions: Transaction history is displayed in the user interface.
+UC-08: Generate Reports
+Actor: Admin / Transport Authority
+Description: Admin generates daily, weekly, or monthly reports on transactions, revenue, and system usage.
+Preconditions: Admin is authenticated in the system.
+Postconditions: Report is generated and saved or printed for analysis.
+UC-09: System Monitoring
+Actor: Admin / System
+Description: Tracks system performance, device status, and transaction logs in real time.
+Preconditions: System and backend are operational.
+Postconditions: Admin receives alerts for failures or performance issues.
+UC-10: Error Handling & Alerts
+Actor: System, Admin
+Description: Automatically detects failed transactions or device errors and notifies relevant actors.
+Preconditions: System failure or transaction failure occurs.
+Postconditions: Issue logged, alerts sent, system continues operation.
