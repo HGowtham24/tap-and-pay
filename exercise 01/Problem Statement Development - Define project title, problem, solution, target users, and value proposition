@@ -1,0 +1,18 @@
+Problem Statement
+Public bus transportation systems largely rely on cash payments or physical tickets, which often lead to long queues, delays during boarding, cash handling issues, and revenue leakage. Conductors and passengers face problems such as lack of exact change, slow ticketing processes, and physical contact during transactions. These issues increase travel time, reduce operational efficiency, and create inconvenience for daily commuters, especially during peak hours.
+There is a need for a fast, secure, and contactless fare payment system that simplifies bus boarding and improves the overall commuter experience.
+Proposed Solution
+The Tap and Pay System for Buses enables passengers to pay their bus fare by tapping an NFC-enabled smartphone, smart card, or wearable device on a fare reader installed inside the bus. The system automatically deducts the fare from the user’s digital wallet or linked bank account and provides instant transaction confirmation. Secure technologies such as encryption, tokenization, and optional biometric authentication ensure safe and reliable payments.
+Target Users
+Daily commuters and passengers
+Bus transport corporations (government and private)
+Bus conductors and drivers
+Students and office commuters
+Tourists and occasional travelers
+Value Proposition
+Faster Boarding: Reduces waiting time during peak hours
+Cashless Payments: Eliminates the need for cash handling
+Improved Efficiency: Speeds up fare collection and reduces delays
+Secure Transactions: Protects user data and payment details
+Convenience: Easy to use with a simple tap
+Operational Transparency: Reduces fare disputes and revenue loss
