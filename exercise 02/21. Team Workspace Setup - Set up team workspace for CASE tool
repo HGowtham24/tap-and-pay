@@ -1,0 +1,41 @@
+Steps to Set Up the Workspace
+Choose the CASE Tool
+Examples: Enterprise Architect, Visual Paradigm, Rational Rose, StarUML
+Ensure all team members have access to the tool.
+Create a Project Repository
+Set up a shared project file or repository in the CASE tool.
+Could be:
+Local network shared folder
+Cloud-based storage (Google Drive, OneDrive, etc.)
+Built-in version control in the CASE tool
+Define Folder Structure
+Typical structure:
+/Project_Name
+   /Requirements
+   /Design
+      /Diagrams
+   /Implementation
+   /Testing
+   /Documentation
+Keeps files organized and easy to navigate.
+Set User Roles & Permissions
+Assign roles like Admin, Designer, Reviewer, Tester.
+Restrict write access if necessary.
+Integrate Version Control (Optional but Recommended)
+Tools: Git, SVN
+Ensures team collaboration without overwriting each other’s work.
+Create Templates
+Standardize diagrams and documents:
+Use consistent UML templates: Use Case, Sequence, Class, Activity diagrams.
+Document templates: Requirement specs, Test plans.
+Test Collaboration Setup
+Have all members:
+Open the workspace
+Create/edit a diagram
+Commit changes (if version-controlled)
+Ensure changes are reflected for everyone.
+Document Workspace Guidelines
+Create a short guide for team members:
+How to check in/out files
+Naming conventions
+Directory usage
