@@ -1,0 +1,44 @@
+@startuml
+package "Tap and Pay System" {
+  
+  package "1. User Module" {
+    [Registration & Login]
+    [Wallet / Bank Account Linking]
+    [Transaction History & Profile Management]
+  }
+  
+  package "2. Payment Module" {
+    [Tap-to-Pay Processing]
+    [Payment Authentication & Security]
+    [Payment Confirmation Notification]
+    [Error Handling & Alerts]
+  }
+  
+  package "3. Conductor Module" {
+    [Payment Verification]
+    [Boarding Assistance Tools]
+    [Transaction Status Dashboard]
+  }
+  
+  package "4. Admin / Backend Module" {
+    [System Monitoring]
+    [Report Generation]
+    [Revenue & Transaction Management]
+    [User & Device Management]
+  }
+  
+  package "5. Integration Module" {
+    [Payment Gateway Integration]
+    [Bank APIs]
+    [NFC Reader Device Integration]
+  }
+  
+  package "6. Maintenance & Security Module" {
+    [System Updates & Patches]
+    [Data Security & Encryption]
+    [Logging & Audit Trails]
+  }
+  
+}
+
+@enduml
