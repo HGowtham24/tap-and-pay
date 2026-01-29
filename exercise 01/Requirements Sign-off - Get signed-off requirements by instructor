@@ -1,0 +1,10 @@
+1. Purpose
+The purpose of this document is to obtain formal approval from the instructor for the requirements defined in the Software Requirements Specification (SRS) of the Tap and Pay System for Contactless Bus Fare Collection. This sign-off confirms that the documented requirements, scope, functional and non-functional specifications, stakeholder register, use case diagrams, and glossary meet project expectations and can be used for further design, development, and implementation.
+2. Scope of Requirements
+The requirements cover:
+Functional requirements for user registration, account linking, tap-to-pay fare, transaction logging, payment verification, and backend reporting
+Non-functional requirements including performance, security, reliability, and usability
+In-scope and out-of-scope features
+Stakeholder analysis and register
+Use case diagrams and system glossary
+These requirements define the boundaries of the project and serve as a baseline for project development and evaluation.
