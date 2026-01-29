@@ -1,0 +1,8 @@
+Tap-to-Pay Fare → Payment Authentication & Security
+Every fare transaction must include authentication and security checks. This is mandatory for every payment.
+Tap-to-Pay Fare → Payment Confirmation Notification
+Each transaction must send a confirmation to the passenger and conductor.
+View Transaction History → Tap-to-Pay Fare
+Transaction history always depends on completed tap-to-pay transactions being logged.
+Generate Reports → System Monitoring
+Reports are generated using data collected from system monitoring; this is always required.
