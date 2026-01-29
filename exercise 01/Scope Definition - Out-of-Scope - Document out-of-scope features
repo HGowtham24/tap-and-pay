@@ -1,0 +1,17 @@
+Scope Definition
+The Tap and Pay E-Ticketing system is a digital infrastructure designed to facilitate seamless, contactless fare collection. It enables commuters to pay for journeys using NFC-enabled devices (smartphones, smartwatches) or EMV contactless bank cards, replacing traditional paper tickets and manual cash handling.
+
+Out-of-Scope Features
+The following features are explicitly excluded from the current phase of development to ensure system stability and performance:
+
+Physical Ticket Vending: The system will not support the issuance or printing of physical paper tickets or magnetic stripe cards.
+
+Cash Management: Handling of physical currency at kiosks or by staff for top-ups is excluded; all transactions must be digital.
+
+Complex Route Planning: While the system handles payments, a full-scale GPS navigation or multi-modal trip planning engine (like Google Maps integration) is out-of-scope.
+
+Retail/Merchant Payments: The tap-and-pay functionality is strictly limited to transit fare collection and cannot be used for third-party retail purchases within the station.
+
+Legacy Hardware Support: The system will not integrate with older, non-NFC turnstiles or manual validation gates.
+
+On-board Fine Management: Real-time processing of penalties or fines for fare evasion by transit officers via the app is excluded.
