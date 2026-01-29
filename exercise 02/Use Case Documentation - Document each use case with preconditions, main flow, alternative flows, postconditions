@@ -1,0 +1,68 @@
+UC-01: User Registration
+Actor: Passenger
+Preconditions: Passenger has a smartphone or smart card; internet connection available.
+Main Flow:
+Passenger opens the Tap and Pay app.
+Passenger selects “Register” and enters personal details (name, email, phone).
+Passenger creates a secure password/PIN.
+System validates input and creates a new account.
+System confirms successful registration.
+Alternative Flows:
+2a. If email/phone already exists, system prompts for login or account recovery.
+4a. If input validation fails, system requests correction.
+Postconditions: Passenger account is created and ready for use.
+UC-02: Login / Authentication
+Actor: Passenger
+Preconditions: Passenger has a registered account.
+Main Flow:
+Passenger opens the app and enters login credentials.
+System validates credentials.
+System grants access to passenger dashboard.
+Alternative Flows:
+2a. Invalid credentials → System prompts to retry or reset password.
+Postconditions: Passenger is authenticated and can access system features.
+UC-03: Wallet / Bank Account Linking
+Actor: Passenger
+Preconditions: Passenger account is active; passenger has a valid bank account or wallet.
+Main Flow:
+Passenger selects “Link Wallet/Bank Account”.
+Passenger enters payment account details.
+System verifies account via payment gateway.
+System confirms successful linking.
+Alternative Flows:
+2a. Invalid account → System prompts to re-enter details.
+3a. Verification fails → System shows error message.
+Postconditions: Payment account is linked and ready for transactions.
+UC-04: Tap-to-Pay Fare
+Actor: Passenger, System
+Preconditions: Passenger has linked payment account; bus fare reader is functional.
+Main Flow:
+Passenger taps NFC-enabled device or smart card on fare reader.
+System authenticates payment.
+Payment gateway authorizes transaction.
+System deducts fare and confirms payment.
+Alternative Flows:
+2a. Authentication fails → System requests retry or alternative payment.
+3a. Insufficient balance → System prompts user to add funds.
+4a. Network failure → System queues transaction for later processing.
+Postconditions: Fare is deducted and recorded; payment confirmation sent to passenger and conductor.
+UC-05: Payment Confirmation Notification
+Actor: Passenger, Bus Conductor, System
+Preconditions: Tap-to-pay transaction initiated.
+Main Flow:
+System generates confirmation message.
+Passenger receives visual/audio notification.
+Conductor receives notification of successful payment.
+Alternative Flows:
+1a. Transaction fails → System sends failure notification.
+Postconditions: Transaction status communicated to all actors; transaction logged in system.
+UC-06: Payment Verification
+Actor: Bus Conductor
+Preconditions: Passenger has tapped and completed payment.
+Main Flow:
+Conductor scans passenger device or card.
+System validates payment status.
+Conductor allows boarding if payment is valid.
+Alternative Flows:
+2a. Payment not found → Conductor requests retry or directs passenger to add funds.
+Postconditions: Passenger payment is verified; boarding decision recorded.
