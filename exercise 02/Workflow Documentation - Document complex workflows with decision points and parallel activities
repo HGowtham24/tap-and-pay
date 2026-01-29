@@ -1,0 +1,86 @@
+Workflow 1: Passenger Boarding and Payment Process
+Actors: Passenger, Bus Conductor, System, Payment Gateway
+Steps and Decision Points:
+Passenger Authentication
+Passenger opens Tap and Pay app
+Decision: Does the passenger have an account?
+No: Passenger registers → account created → login
+Yes: Proceed to login
+Wallet / Bank Linking
+Passenger links digital wallet or bank account
+System verifies account through Payment Gateway
+Boarding the Bus
+Passenger approaches the bus
+Decision: Is NFC reader functional?
+Yes: Proceed with Tap-to-Pay
+No: Passenger directed to alternative payment
+Tap-to-Pay Process
+Passenger taps device → System detects tap
+Payment authentication occurs → forwarded to Payment Gateway
+Decision: Is payment successful?
+Yes: Payment confirmation sent to Passenger and Conductor → Boarding allowed
+No: Error Handling triggered → Passenger prompted to retry/add funds
+Parallel Activities
+System logs transaction
+Conductor simultaneously verifies payment and updates boarding status
+Workflow 2: Admin and Reporting Process
+Actors: Admin, System, Auditor (Optional)
+Steps and Decision Points:
+System Monitoring
+Admin monitors system performance, device status, and transaction logs
+Decision: Are there any system errors or unusual activity?
+Yes: Alerts sent → IT team notified
+No: Continue monitoring
+Report Generation
+Admin generates reports (daily/weekly/monthly)
+Reports include revenue, passenger statistics, transaction success/failure rates
+Optional Audit
+Decision: Is audit required?
+Yes: Auditor reviews logs for security and compliance
+No: Workflow continues
+System Maintenance (Parallel Activity)
+Admin schedules updates and patches
+Maintenance runs in parallel with monitoring to avoid service disruption
+Workflow 3: Error Handling and Alerts
+Actors: System, Passenger, Conductor, Admin
+Steps:
+Detect failed transaction, insufficient balance, or NFC device error
+Generate alert to Passenger (retry/add funds)
+Notify Conductor of issue
+Log error in system for Admin review
+Optional: Admin triggers maintenance or resolves device issue
+Workflow Diagram (Flowchart-Style)
+Here’s a PlantUML flowchart for the Passenger Boarding and Payment Workflow, which includes decision points and parallel activities:
+@startuml
+start
+:Passenger opens Tap and Pay App;
+
+if (Has account?) then (No)
+  :Register account;
+endif
+
+:Login / Authenticate;
+
+:Link Wallet or Bank Account;
+:Verify account with Payment Gateway;
+
+:Passenger approaches bus;
+if (Is NFC reader functional?) then (Yes)
+  :Tap-to-Pay Fare;
+  :Authenticate Payment;
+  if (Payment Successful?) then (Yes)
+    fork
+      :Send Payment Confirmation to Passenger;
+    fork
+      :Conductor verifies payment;
+    end fork
+    :Passenger boards bus;
+  else (No)
+    :Trigger Error Handling;
+    :Prompt passenger to retry/add funds;
+  endif
+else (No)
+  :Direct passenger to alternative payment;
+endif
+stop
+@enduml
