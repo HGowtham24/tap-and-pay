@@ -1,0 +1,66 @@
+1. Passenger Class
+Description: Represents a passenger using the Tap and Pay system.
+Attributes:
+passengerID: int – Unique ID for each passenger
+name: String – Full name of passenger
+email: String – Email address
+phoneNumber: String – Contact number
+walletBalance: float – Current digital wallet balance
+transactionHistory: List<Transaction> – List of past transactions
+Methods:
+register() – Register a new passenger account
+login() – Authenticate passenger
+linkWallet(accountDetails) – Link bank or wallet
+tapToPay(fareAmount) – Make a payment
+viewTransactionHistory() – Display past transactions
+updateProfile(details) – Update passenger information
+2. BusConductor Class
+Description: Represents a conductor who verifies payments.
+Attributes:
+conductorID: int – Unique ID for conductor
+name: String – Conductor name
+assignedBusID: int – Bus assigned to conductor
+Methods:
+verifyPayment(passengerID) – Check passenger payment status
+displayBoardingStatus(passengerID) – Show if passenger is allowed to board
+3. BusDriver Class
+Description: Represents the driver of the bus.
+Attributes:
+driverID: int – Unique driver ID
+name: String – Driver name
+busID: int – Bus assigned to driver
+Methods:
+monitorBoarding() – Observe boarding flow
+alertConductor(issue) – Report issues to conductor
+4. Admin / TransportAuthority Class
+Description: Represents admin for monitoring and reporting.
+Attributes:
+adminID: int – Unique admin ID
+name: String – Admin name
+role: String – Admin role (reporting, monitoring)
+Methods:
+generateReport(type) – Generate daily/weekly/monthly reports
+monitorSystem() – Track system and device status
+manageUsers(userID, action) – Add/update/delete users
+performMaintenance() – Execute system updates
+5. PaymentGateway Class
+Description: Represents external payment gateway for processing payments.
+Attributes:
+gatewayID: int – Unique gateway identifier
+name: String – Gateway name
+transactionLog: List<Transaction> – Log of processed transactions
+Methods:
+processPayment(amount, passengerID) – Authorize and deduct payment
+validateAccount(accountDetails) – Verify bank or wallet accounts
+sendConfirmation(transactionID) – Notify system of transaction result
+6. Transaction Class
+Description: Represents a single payment transaction.
+Attributes:
+transactionID: int – Unique transaction ID
+passengerID: int – Passenger associated with transaction
+amount: float – Fare amount
+status: String – Payment status (Success/Failure)
+timestamp: DateTime – Date and time of transaction
+Methods:
+logTransaction() – Record transaction in system
+updateStatus(status) – Update payment status
