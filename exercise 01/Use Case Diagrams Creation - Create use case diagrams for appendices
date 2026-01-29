@@ -1,0 +1,22 @@
+@startuml
+left to right direction
+
+actor Passenger
+actor "Bus Conductor" as Conductor
+actor "Transport Authority" as Admin
+actor "Payment Gateway" as PG
+
+Passenger --> (Register / Login)
+Passenger --> (Link Wallet / Bank Account)
+Passenger --> (Tap to Pay Fare)
+Passenger --> (Receive Payment Confirmation)
+Passenger --> (View Transaction History)
+
+Conductor --> (Verify Payment)
+
+Admin --> (Generate Reports)
+Admin --> (Monitor System)
+
+(Tap to Pay Fare) --> (Process Payment)
+(Process Payment) --> PG
+@enduml
