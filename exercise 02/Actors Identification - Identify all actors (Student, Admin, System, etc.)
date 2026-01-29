@@ -1,0 +1,14 @@
+Passenger
+The Passenger is the primary end-user of the Tap and Pay system. Passengers use NFC-enabled devices, smart cards, or wearables to pay bus fares. Their main interactions include registering an account, linking a digital wallet or bank account, making fare payments by tapping, receiving payment confirmations, and viewing transaction history. Passengers expect the system to be fast, secure, and user-friendly.
+Bus Conductor
+The Bus Conductor assists passengers during boarding and verifies payment status in real time. The conductor uses a dashboard or handheld device to check whether a passenger has paid the fare and can resolve minor payment issues on the spot. Their primary goal is to ensure accurate fare collection and smooth boarding operations.
+Bus Driver
+The Bus Driver ensures the safe operation of the bus and oversees boarding flow. While the driver does not directly interact with payment processing, they rely on the conductor and system notifications to monitor boarding efficiency and delays caused by payment issues.
+Transport Authority / Admin
+The Transport Authority or Admin is responsible for system configuration, monitoring operations, generating reports, and overseeing revenue collection. Admins manage user accounts, track device performance, analyze transaction data, and ensure compliance with regulations. They interact with the backend server and dashboards to maintain system efficiency.
+Payment Gateway
+The Payment Gateway is an external system that securely processes fare payments. It handles transaction authorization, communicates payment status back to the system, and ensures compliance with banking standards. The system interacts with the gateway for all fare transactions in real time.
+System (Tap and Pay Backend)
+The System itself is considered an actor in some use cases because it performs automated functions such as authenticating transactions, logging payments, sending notifications, and generating reports. It interacts with passengers, conductors, payment gateways, and the admin to ensure smooth operations.
+Auditors / Security Team (Optional Secondary Actor)
+Auditors or security personnel review transaction logs, verify system security, and ensure compliance with digital payment standards. They do not perform day-to-day operations but are critical for monitoring fraud and ensuring data integrity.
